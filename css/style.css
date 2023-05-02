@@ -5,7 +5,7 @@
 }
 
 body{
-    font-size: ;
+    font-size: .6rem;
     font-family: 'Montserrat', sans-serif;
     font-family: 'PT Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
@@ -14,13 +14,13 @@ body{
 .container{
     max-width: 1200px;
     margin: 0 auto;
+    padding-top: 2rem;
 }
 
 .row{
     display: flex;
     flex-wrap: wrap;
 }
-
 
 
 [class*="col"]{
