@@ -7,26 +7,25 @@
 body{
     background-color: black;
     font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
 }
 
 .container{
     max-width: 1120px;
     margin: 0 auto;
-    padding-top: 10rem;
+    margin-top: 25rem;
 }
 
 .row{
     display: flex;
-    flex-wrap: wrap;
 }
 
 [class*="col"]{
     color: white;
-    padding: 1rem;
-    border-radius: 43%;
+    padding: 2rem;
+    border: 1px solid black;
     text-align: center;
     flex: 0 0 auto;
-    margin: 1rem;
 }
 
 [class*="lgrey-bg"]{
@@ -43,4 +42,108 @@ body{
 
 [class*="orange-bg"]{
     background-color: #f69806;
+}
+
+.b-text{
+    color: black;
+}
+
+
+@media screen and (max-width: 992px) {
+
+
+    [class*="col"]{
+        color: white;
+        padding: 1rem;
+        border-radius: 30%;
+        border-style: none;
+        text-align: center;
+        flex: 0 0 auto;
+        margin: .2rem;
+    }
+
+    .container{
+        margin-top: 30rem;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    [class*="dgrey-bg"]{
+        display: none;
+    }
+
+    .container{
+        margin-top: 25rem;
+    }
+
+    [class*="col"]{
+        color: white;
+        padding: 2rem;
+        border-style: none;
+        text-align: center;
+        flex: 0 0 auto;
+    }
+
+    .col-md-1{
+        flex-basis: calc((100% / 12) * 1);
+        max-width: calc((100% / 12) * 1);
+    }
+
+    .col-md-2{
+        flex-basis: calc((100% / 12) * 2);
+        max-width: calc((100% / 12) * 2);
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    [class*="dgrey-bg"]{
+        display: none;
+    }
+
+    body{
+        font-size: 1.9rem;
+    }
+
+    .container{
+        margin-top: 25rem;
+    }
+
+    [class*="col"]{
+        color: white;
+        padding: 2rem;
+        border-style: none;
+        border-radius: 50%;
+        text-align: center;
+        flex: 0 0 auto;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    [class*="dgrey-bg"]{
+        display: none;
+    }
+
+    body{
+        font-size: 1.7rem;
+    }
+
+    .container{
+        margin-top: 30rem;
+        min-width: 310px;
+    }
+
+    [class*="col"]{
+        color: white;
+        padding: 1rem;
+        border-style: none;
+        border-radius: 50%;
+        text-align: center;
+        flex: 0 0 auto;
+    }
+
 }
